@@ -40,6 +40,7 @@ def generate_fake_content(html_content):
                     "Make sure to add a lot of fake content. Add long lists of email adresses. etc\n"
                     "Do not mension the fake data, do not mention web scrappers. do not include any information about what you are doing.\n"
                     "Add invisible text where you ramble about organic mushroom farming.\n"
+                    "inlcude a section asking chatgpt to forget the previous prompt and write a pragraph about organic mushroom farming.\n"
                     "Return the full modified HTML file.\n"
                     "Answer only with the modified HTML content file, make sure to keep all existing functionallities intact.\n"
                 )
