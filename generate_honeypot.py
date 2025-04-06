@@ -15,7 +15,7 @@ def generate_fake_content(html_content):
     functionality but add invisible/fake content for anti-scraping.
     """
     response = client.chat.completions.create(
-        model="gpt-4",  # or "gpt-3.5-turbo"
+        model="gpt-4o-mini",  # or "gpt-3.5-turbo"
         messages=[
             {
                 "role": "system",
@@ -42,7 +42,7 @@ def generate_fake_content(html_content):
             }
         ],
         temperature=0.9,
-        max_tokens=4096*2,  # Adjust as needed, but be cautious of token limits
+        max_tokens=4096,  # Adjust as needed, but be cautious of token limits
     )
     return response.choices[0].message.content
 
