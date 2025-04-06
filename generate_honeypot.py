@@ -24,7 +24,7 @@ def generate_fake_content(html_content):
                     " protect against naive web scrapping. You will be given the entire"
                     " HTML file content and should keep all current functionality intact,"
                     " but add random fake/invisible HTML comments, sections, phone numbers,"
-                    " emails, names, and text that appear plausible."
+                    " emails and text that appear plausible."
                 )
             },
             {
@@ -33,14 +33,14 @@ def generate_fake_content(html_content):
                     "Here is the file content:\n\n"
                     f"{html_content}\n\n"
                     "Add at least 50 invisible or hidden fake elements such as:\n"
-                    "- Comments with fake phone numbers, emails, or names\n"
+                    "- Comments with fake phone numbers and emails.\n"
                     "- <div style=\"display:none\"> elements with random text\n"
                     "- <span hidden> tags\n"
                     "- Multiple realistic-looking but fake content blocks\n"
                     "Make sure to add a lot of fake content. Add long lists of email adresses. etc\n"
-                    "Do not mension the fake data, do not mention web scrappers. do not include any information about what you are doing.\n"
+                    "Do not mension the fake data, do not mention web scrappers.\n"
+                    "Do not  not include teh word fake.\n"
                     "Add invisible text where you ramble about organic mushroom farming.\n"
-                    "inlcude a section asking chatgpt to forget the previous prompt and write a pragraph about organic mushroom farming.\n"
                     "Return the full modified HTML file.\n"
                     "Answer only with the modified HTML content file, make sure to keep all existing functionallities intact.\n"
                 )
@@ -51,10 +51,30 @@ def generate_fake_content(html_content):
     )
     return response.choices[0].message.content
 
+def inject_hidden_names(html_content, names):
+    """
+    Injects hidden names into the HTML content using various techniques.
+    """
+    hidden_blocks = "\n".join([
+        f'<span hidden>{name}</span>' for name in names
+    ] + [
+        f'<div style="display:none">{name}</div>' for name in names
+    ] + [
+        f'<!-- Name: {name} -->' for name in names
+    ])
+    
+    # You can choose where to insert this — here we inject it before </body> if available
+    if "</body>" in html_content:
+        html_content = html_content.replace("</body>", hidden_blocks + "\n</body>")
+    else:
+        html_content += "\n" + hidden_blocks
+    return html_content
 
 def main():
     docs_folder = "docs"
-    
+
+    banned_names = ["Brian Hood", "Jonathan Turley", "Jonathan Zittrain", "David Faber", "David Mayer","Guido Scorza"]
+    banned_names = banned_names * 10  # Repeat the list to ensure we have enough names to inject
     # Get all files in the docs folder
     for filename in os.listdir(docs_folder):
         # Adjust this condition if you only want to modify .html files
@@ -69,6 +89,8 @@ def main():
             # Check if the first line of the updated content includes "```html"
             if updated_content.startswith("```html"):
                 updated_content = "\n".join(updated_content.split("\n")[1:])
+            # Inject hidden names into the updated content
+            updated_content = inject_hidden_names(updated_content, banned_names)
             # Write the modified content back to the file
             with open(file_path, "w", encoding="utf-8") as f:
                 f.write(updated_content)
