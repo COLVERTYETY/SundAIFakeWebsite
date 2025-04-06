@@ -1,10 +1,7 @@
 name: Inject Fake Web Content on Push to Main
-description: '
-  Automatically injects invisible or commented fake content into the `deploy` branch
-  after every push to the `main` branch. This is intended to confuse web scrapers
-  and protect your website from unwanted scraping.
-  The content is generated using OpenAI s ChatGPT and is not visible to users.'
-
+description: ' Automatically injects invisible or commented fake content into a webpage to confuse web scrapers'
+icon: 'code'
+color: 'blue'
 
 # Give the GITHUB_TOKEN "write" permission to push branches
 permissions:
