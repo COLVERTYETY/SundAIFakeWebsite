@@ -1,0 +1,2 @@
+[console_scripts]
+llm-honeypot = honeypot.agent:create_cli_tool

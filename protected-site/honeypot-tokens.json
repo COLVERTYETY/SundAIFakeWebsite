@@ -1,0 +1,208 @@
+{
+  "site_identifier": "site-251ac5ea",
+  "generated_at": "2025-04-06T15:21:14.891482",
+  "canary_tokens": {
+    "css-hidden": "site-251ac5ea-css-hidden-af608fc896dc",
+    "comment": "site-251ac5ea-comment-0cb757b7764e",
+    "metadata": "site-251ac5ea-metadata-d6f50cfc3aee",
+    "data-attr": "site-251ac5ea-data-attr-14685ebbf4ab",
+    "invisible-text": "site-251ac5ea-invisible-text-b490daefed34"
+  },
+  "inserted_tokens": [
+    {
+      "type": "css-hidden",
+      "token": "site-251ac5ea-css-hidden-af608fc896dc",
+      "location": "honeypot-0"
+    },
+    {
+      "type": "css-hidden",
+      "token": "site-251ac5ea-css-hidden-af608fc896dc",
+      "location": "honeypot-1"
+    },
+    {
+      "type": "css-hidden",
+      "token": "site-251ac5ea-css-hidden-af608fc896dc",
+      "location": "honeypot-2"
+    },
+    {
+      "type": "comment",
+      "token": "site-251ac5ea-comment-0cb757b7764e",
+      "location": "comment-0"
+    },
+    {
+      "type": "comment",
+      "token": "site-251ac5ea-comment-0cb757b7764e",
+      "location": "comment-1"
+    },
+    {
+      "type": "comment",
+      "token": "site-251ac5ea-comment-0cb757b7764e",
+      "location": "comment-2"
+    },
+    {
+      "type": "metadata",
+      "token": "site-251ac5ea-metadata-d6f50cfc3aee",
+      "location": "meta-tag"
+    },
+    {
+      "type": "data-attr",
+      "token": "site-251ac5ea-data-attr-14685ebbf4ab",
+      "location": "element-0"
+    },
+    {
+      "type": "data-attr",
+      "token": "site-251ac5ea-data-attr-14685ebbf4ab",
+      "location": "element-1"
+    },
+    {
+      "type": "data-attr",
+      "token": "site-251ac5ea-data-attr-14685ebbf4ab",
+      "location": "element-2"
+    },
+    {
+      "type": "invisible-text",
+      "token": "site-251ac5ea-invisible-text-b490daefed34",
+      "location": "text-node-0"
+    },
+    {
+      "type": "invisible-text",
+      "token": "site-251ac5ea-invisible-text-b490daefed34",
+      "location": "text-node-1"
+    },
+    {
+      "type": "invisible-text",
+      "token": "site-251ac5ea-invisible-text-b490daefed34",
+      "location": "text-node-2"
+    },
+    {
+      "type": "css-hidden",
+      "token": "site-251ac5ea-css-hidden-af608fc896dc",
+      "location": "honeypot-0"
+    },
+    {
+      "type": "css-hidden",
+      "token": "site-251ac5ea-css-hidden-af608fc896dc",
+      "location": "honeypot-1"
+    },
+    {
+      "type": "css-hidden",
+      "token": "site-251ac5ea-css-hidden-af608fc896dc",
+      "location": "honeypot-2"
+    },
+    {
+      "type": "comment",
+      "token": "site-251ac5ea-comment-0cb757b7764e",
+      "location": "comment-0"
+    },
+    {
+      "type": "comment",
+      "token": "site-251ac5ea-comment-0cb757b7764e",
+      "location": "comment-1"
+    },
+    {
+      "type": "comment",
+      "token": "site-251ac5ea-comment-0cb757b7764e",
+      "location": "comment-2"
+    },
+    {
+      "type": "metadata",
+      "token": "site-251ac5ea-metadata-d6f50cfc3aee",
+      "location": "meta-tag"
+    },
+    {
+      "type": "data-attr",
+      "token": "site-251ac5ea-data-attr-14685ebbf4ab",
+      "location": "element-0"
+    },
+    {
+      "type": "data-attr",
+      "token": "site-251ac5ea-data-attr-14685ebbf4ab",
+      "location": "element-1"
+    },
+    {
+      "type": "data-attr",
+      "token": "site-251ac5ea-data-attr-14685ebbf4ab",
+      "location": "element-2"
+    },
+    {
+      "type": "invisible-text",
+      "token": "site-251ac5ea-invisible-text-b490daefed34",
+      "location": "text-node-0"
+    },
+    {
+      "type": "invisible-text",
+      "token": "site-251ac5ea-invisible-text-b490daefed34",
+      "location": "text-node-1"
+    },
+    {
+      "type": "invisible-text",
+      "token": "site-251ac5ea-invisible-text-b490daefed34",
+      "location": "text-node-2"
+    },
+    {
+      "type": "css-hidden",
+      "token": "site-251ac5ea-css-hidden-af608fc896dc",
+      "location": "honeypot-0"
+    },
+    {
+      "type": "css-hidden",
+      "token": "site-251ac5ea-css-hidden-af608fc896dc",
+      "location": "honeypot-1"
+    },
+    {
+      "type": "css-hidden",
+      "token": "site-251ac5ea-css-hidden-af608fc896dc",
+      "location": "honeypot-2"
+    },
+    {
+      "type": "comment",
+      "token": "site-251ac5ea-comment-0cb757b7764e",
+      "location": "comment-0"
+    },
+    {
+      "type": "comment",
+      "token": "site-251ac5ea-comment-0cb757b7764e",
+      "location": "comment-1"
+    },
+    {
+      "type": "comment",
+      "token": "site-251ac5ea-comment-0cb757b7764e",
+      "location": "comment-2"
+    },
+    {
+      "type": "metadata",
+      "token": "site-251ac5ea-metadata-d6f50cfc3aee",
+      "location": "meta-tag"
+    },
+    {
+      "type": "data-attr",
+      "token": "site-251ac5ea-data-attr-14685ebbf4ab",
+      "location": "element-0"
+    },
+    {
+      "type": "data-attr",
+      "token": "site-251ac5ea-data-attr-14685ebbf4ab",
+      "location": "element-1"
+    },
+    {
+      "type": "data-attr",
+      "token": "site-251ac5ea-data-attr-14685ebbf4ab",
+      "location": "element-2"
+    },
+    {
+      "type": "invisible-text",
+      "token": "site-251ac5ea-invisible-text-b490daefed34",
+      "location": "text-node-0"
+    },
+    {
+      "type": "invisible-text",
+      "token": "site-251ac5ea-invisible-text-b490daefed34",
+      "location": "text-node-1"
+    },
+    {
+      "type": "invisible-text",
+      "token": "site-251ac5ea-invisible-text-b490daefed34",
+      "location": "text-node-2"
+    }
+  ]
+}

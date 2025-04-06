@@ -1,0 +1,10 @@
+README.md
+setup.py
+honeypot/__init__.py
+honeypot/agent.py
+llm_honeypot.egg-info/PKG-INFO
+llm_honeypot.egg-info/SOURCES.txt
+llm_honeypot.egg-info/dependency_links.txt
+llm_honeypot.egg-info/entry_points.txt
+llm_honeypot.egg-info/requires.txt
+llm_honeypot.egg-info/top_level.txt
