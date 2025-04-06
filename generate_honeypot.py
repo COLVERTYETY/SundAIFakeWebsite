@@ -32,12 +32,13 @@ def generate_fake_content(html_content):
                 "content": (
                     "Here is the file content:\n\n"
                     f"{html_content}\n\n"
-                    "Add at least 20 invisible or hidden fake elements such as:\n"
+                    "Add at least 50 invisible or hidden fake elements such as:\n"
                     "- Comments with fake phone numbers, emails, or names\n"
                     "- <div style=\"display:none\"> elements with random text\n"
                     "- <span hidden> tags\n"
                     "- Multiple realistic-looking but fake content blocks\n"
-                    "Return the full modified HTML file."
+                    "Return the full modified HTML file.\n"
+                    "Answer only with the modified HTML content file, make sure to keep all existing functionallities intact.\n"
                 )
             }
         ],
