@@ -71,17 +71,6 @@ On every push to the main branch, the following workflow is triggered:
 #### 🔐 Secrets Needed
 OPENAI_API_KEY: Your OpenAI API key (stored in GitHub Secrets)
 
-### 📁 Project Structure
-
-.
-├── docs/
-│   └── index.html           # Example HTML file(s) to be processed
-├── generate_honeypot.py     # Main Python script
-├── .github/
-│   └── workflows/
-│       └── inject-fake-content.yml  # GitHub Actions CI script
-└── README.md
-
 # 🧰 Future Improvements
 
 Image Poisining via NightShade to protect against image-based scraping
