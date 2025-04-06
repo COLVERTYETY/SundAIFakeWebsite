@@ -45,8 +45,8 @@ def generate_fake_content(html_content):
                 )
             }
         ],
-        temperature=0.9,
-        max_tokens=4096,  # Adjust as needed, but be cautious of token limits
+        temperature=0.5,
+        max_tokens=4096*2,  # Adjust as needed, but be cautious of token limits
     )
     return response.choices[0].message.content
 
@@ -65,7 +65,9 @@ def main():
             
             # Send content to LLM for modification
             updated_content = generate_fake_content(original_content)
-            
+            # Check if the first line of the updated content includes "```html"
+            if updated_content.startswith("```html"):
+                updated_content = "\n".join(updated_content.split("\n")[1:])
             # Write the modified content back to the file
             with open(file_path, "w", encoding="utf-8") as f:
                 f.write(updated_content)

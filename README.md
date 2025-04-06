@@ -93,8 +93,8 @@ Scraper heuristics simulation for testing effectiveness
 Additional fake formats (JSON-LD, microdata, etc.)
 
 
-# 🧙‍♂️ Author 🧑‍💻
+# 🧙‍♂️ Authors 🧑‍💻
 
-Developed by Nicolas STAS, Ankit Baral etc 
+Developed by Nicolas STAS, Ankit Baral, Anshul Agarwal, Mana Dhillon, Aleks Jakulin
 
 Hacked together for SundAI — blending AI + deception to keep the web safe from bots.
