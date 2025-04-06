@@ -16,5 +16,5 @@ fake_content = response['choices'][0]['message']['content']
 # Inject into your HTML file
 html_path = "./docs/index.html"
 with open(html_path, "a") as f:
-    f.write(f"\n<!-- Fake Content Generated @ {datetime.now()} -->\n")
+    f.write(f"\n<!-- Fake Content Generated  @ {datetime.now()} -->\n")
     f.write(fake_content)
