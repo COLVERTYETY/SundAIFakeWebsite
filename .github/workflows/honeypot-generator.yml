@@ -1,5 +1,10 @@
 name: Inject Fake Web Content on Push to Main
 
+# Give the GITHUB_TOKEN "write" permission to push branches
+permissions:
+  contents: write
+  pull-requests: write
+
 on:
   push:
     branches:
