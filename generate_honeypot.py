@@ -1,20 +1,24 @@
-import openai
 import os
+from openai import OpenAI
 from datetime import datetime
 
-openai.api_key = os.getenv("OPENAI_API_KEY")
+# Create a client using your API key
+client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
-prompt = "Generate fake but realistic HTML comments and invisible elements (e.g., <div style='display:none'>) about tech topics or products. Include fake emails, fake names so that a naive scraping of the website results in fake information overload"
-
-response = openai.ChatCompletion.create(
-    model="gpt-4",
-    messages=[{"role": "user", "content": prompt}]
+# Generate fake content using GPT-4 or GPT-3.5
+response = client.chat.completions.create(
+    model="gpt-4",  # or "gpt-3.5-turbo"
+    messages=[
+        {"role": "system", "content": "You are a web developer generating fake/invisible HTML content."},
+        {"role": "user", "content": "Generate a mix of realistic and absurd fake HTML comments and <div style='display:none'> sections, as if hidden on a corporate tech landing page."}
+    ]
 )
 
-fake_content = response['choices'][0]['message']['content']
+# Extract the generated content
+fake_content = response.choices[0].message.content
 
-# Inject into your HTML file
-html_path = "./docs/index.html"
+# Inject the fake content into your HTML
+html_path = "public/index.html"
 with open(html_path, "a") as f:
-    f.write(f"\n<!-- Fake Content Generated  @ {datetime.now()} -->\n")
+    f.write(f"\n<!-- Fake Content Generated {datetime.now()} -->\n")
     f.write(fake_content)
