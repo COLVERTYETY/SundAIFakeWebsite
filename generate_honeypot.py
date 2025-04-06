@@ -18,7 +18,7 @@ response = client.chat.completions.create(
 fake_content = response.choices[0].message.content
 
 # Inject the fake content into your HTML
-html_path = "public/index.html"
+html_path = "docs/index.html"
 with open(html_path, "a") as f:
     f.write(f"\n<!-- Fake Content Generated {datetime.now()} -->\n")
     f.write(fake_content)
