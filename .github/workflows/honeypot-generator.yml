@@ -1,4 +1,14 @@
 name: Inject Fake Web Content on Push to Main
+description: '
+  Automatically injects invisible or commented fake content into the `deploy` branch
+  after every push to the `main` branch. This is intended to confuse web scrapers
+  and protect your website from unwanted scraping.
+  The content is generated using OpenAI s ChatGPT and is not visible to users.'
+author: 'COLVERTYETY'
+branding:
+  icon: 'shield lock'         # any valid Octicon name
+  color: 'purple'     # one of: gray-dark, gray, blue, green, yellow, orange, red, purple
+
 
 # Give the GITHUB_TOKEN "write" permission to push branches
 permissions:
