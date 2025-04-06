@@ -1,7 +1,8 @@
 name: Inject Fake Web Content on Push to Main
 description: ' Automatically injects invisible or commented fake content into a webpage to confuse web scrapers'
-icon: 'code'
-color: 'blue'
+branding:
+  icon: 'alert-octagon'
+  color: 'blue'
 
 # Give the GITHUB_TOKEN "write" permission to push branches
 permissions:
